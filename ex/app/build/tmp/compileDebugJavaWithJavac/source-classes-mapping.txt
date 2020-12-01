@@ -1,0 +1,25 @@
+com/example/ex/back_area.java
+ com.example.ex.back_area
+com/example/ex/shoulder_area.java
+ com.example.ex.shoulder_area
+com/example/ex/lower_body_area.java
+ com.example.ex.lower_body_area
+com/example/ex/MainActivity.java
+ com.example.ex.MainActivity
+ com.example.ex.MainActivity$1
+com/example/ex/choose_area.java
+ com.example.ex.choose_area
+ com.example.ex.choose_area$1
+ com.example.ex.choose_area$2
+ com.example.ex.choose_area$3
+ com.example.ex.choose_area$4
+ com.example.ex.choose_area$5
+ com.example.ex.choose_area$6
+com/example/ex/stomach_area.java
+ com.example.ex.stomach_area
+com/example/ex/BuildConfig.java
+ com.example.ex.BuildConfig
+com/example/ex/chest_area.java
+ com.example.ex.chest_area
+com/example/ex/Whole_body_area.java
+ com.example.ex.Whole_body_area
