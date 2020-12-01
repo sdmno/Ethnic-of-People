@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.exercise">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Exercise">
+        <activity android:name=".basket"></activity>
+        <activity android:name=".leg_4" />
+        <activity android:name=".leg_3" />
+        <activity android:name=".leg_2" />
+        <activity android:name=".leg_1" />
+        <activity android:name=".back_4" />
+        <activity android:name=".back_3" />
+        <activity android:name=".back_2" />
+        <activity android:name=".back_1" />
+        <activity android:name=".back" />
+        <activity android:name=".abs_4" />
+        <activity android:name=".abs_3" />
+        <activity android:name=".abs_2" />
+        <activity android:name=".abs_1" />
+        <activity android:name=".abs" />
+        <activity android:name=".chest_4" />
+        <activity android:name=".chest_3" />
+        <activity android:name=".chest_2" />
+        <activity android:name=".chest_1" />
+        <activity android:name=".body_4" />
+        <activity android:name=".body_3" />
+        <activity android:name=".dody_3" />
+        <activity android:name=".body_2" />
+        <activity android:name=".body_1" />
+        <activity android:name=".body" />
+        <activity android:name=".leg" />
+        <activity android:name=".chest" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

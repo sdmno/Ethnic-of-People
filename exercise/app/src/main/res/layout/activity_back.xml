@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".back">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:text=" 등 운동"/>
+
+    <Button
+        android:id="@+id/back_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="등운동1"/>
+
+    <Button
+        android:id="@+id/back_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="등운동2"/>
+    <Button
+        android:id="@+id/back_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="등운동3"/>
+    <Button
+        android:id="@+id/back_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="등운동4"/>
+
+    <Button
+        android:id="@+id/backward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="◀"/>
+
+    <Button
+        android:id="@+id/basket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="장바구니"/>
+
+</LinearLayout>
