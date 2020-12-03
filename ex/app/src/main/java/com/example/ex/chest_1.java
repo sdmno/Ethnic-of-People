@@ -47,19 +47,19 @@ public class chest_1 extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (checkedId == R.id.chest1_rb1){
-                    chest1_text.setText("일반적인 푸쉬업");
+                    chest1_text.setText("일반적인 푸쉬업\n자극부위 : 대흉근 ( 주로 가슴근육 바깥부분 ), 삼각근 (어깨근육), 삼두근");
                     Temp = chest1_rb1.getText().toString();
                 }
                 else if (checkedId == R.id.chest1_rb2){
-                    chest1_text.setText("손을 높은 곳에 지탱한체 하는 푸쉬업");
+                    chest1_text.setText("손을 높은 곳에 지탱한체 하는 푸쉬업\n자극부위 : 가슴 하부, 삼두");
                     Temp = chest1_rb2.getText().toString();
                 }
                 else if (checkedId == R.id.chest1_rb3){
-                    chest1_text.setText("다리를 높은 곳에 고정쉬킨뒤 하는 푸쉬업");
+                    chest1_text.setText("다리를 높은 곳에 고정쉬킨뒤 하는 푸쉬업\n자극부위 : 가슴상부, 삼두근, 삼각근");
                     Temp = chest1_rb3.getText().toString();
                 }
                 else if (checkedId == R.id.chest1_rb4){
-                    chest1_text.setText("팔을 넓게 벌린채로 하는 푸쉬업");
+                    chest1_text.setText("팔을 넓게 벌린채로 하는 푸쉬업\n자극부위 : 대흉근 ( 주로 가슴근육 바깥부분 ), 삼각근 (어깨근육), 삼두근, 등근육");
                     Temp = chest1_rb4.getText().toString();
                 }
             }

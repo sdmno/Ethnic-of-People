@@ -81,6 +81,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/stomach_button4" />
 
+    <Button
+        android:id="@+id/stomach_goback_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:text="뒤로가기"
+        app:backgroundTint="#555555"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stomach_button4"
+        app:layout_constraintVertical_bias="0.87" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="100dp"

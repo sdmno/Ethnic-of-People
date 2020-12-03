@@ -19,13 +19,15 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1">
                 <TableRow>
+
                     <TextView
                         android:id="@+id/exercise_name"
                         android:layout_width="300dp"
                         android:layout_height="50dp"
                         android:layout_gravity="left"
-                        android:gravity="center"
                         android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:textColor="@android:color/black"
                         android:textSize="20sp" />
 
@@ -44,7 +46,6 @@
                         android:text="set"
                         android:textColor="@android:color/black"
                         android:textSize="20sp" />
-
 
 
                 </TableRow>

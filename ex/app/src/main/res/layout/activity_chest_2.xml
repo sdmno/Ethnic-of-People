@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background"
     tools:context=".chest_2">
 
     <TextView
@@ -54,12 +55,12 @@
     <TextView
         android:id="@+id/chest2_text"
         android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:layout_marginTop="30dp"
         android:layout_gravity="center"
         android:background="@drawable/infomation"
         android:textSize="15dp"
-        android:text="평평한 벤치에 누워서 하는 벤치 프레스"
+        android:text="평평한 벤치에 누워서 하는 벤치 프레스\n자극부위 : 대흉근, 상완삼두근, 삼각근"
         />
 
     <TableLayout

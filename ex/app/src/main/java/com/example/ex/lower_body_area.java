@@ -14,6 +14,7 @@ public class lower_body_area extends AppCompatActivity {
     private Button lower_body_button3;
     private Button lower_body_button4;
     private Button lower_body_basket_button;
+    private Button lower_body_goback_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +61,15 @@ public class lower_body_area extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(lower_body_area.this, basket.class);
+                startActivity(intent);
+            }
+        });
+
+        lower_body_goback_button = findViewById(R.id.lower_body_goback_button);
+        lower_body_goback_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(lower_body_area.this, choose_area.class);
                 startActivity(intent);
             }
         });

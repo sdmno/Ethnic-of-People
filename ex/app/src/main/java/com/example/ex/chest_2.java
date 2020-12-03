@@ -44,15 +44,15 @@ public class chest_2 extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (checkedId == R.id.chest2_rb1){
-                    chest2_text.setText("평평한 벤치에 누워서 하는 벤치 프레스");
+                    chest2_text.setText("평평한 벤치에 누워서 하는 벤치 프레스\n자극부위 : 대흉근, 상완삼두근, 삼각근");
                     Temp = chest2_rb1.getText().toString();
                 }
                 else if (checkedId == R.id.chest2_rb2){
-                    chest2_text.setText("비스듬히 세워진 벤치에서 하는 벤치 프레스 (머리가 위쪽)");
+                    chest2_text.setText("비스듬히 세워진 벤치에서 하는 벤치 프레스 (머리가 위쪽)\n자극부위 : 대흉근 상부, 상완삼두근, 삼각근");
                     Temp = chest2_rb2.getText().toString();
                 }
                 else if (checkedId == R.id.chest2_rb3) {
-                    chest2_text.setText("땅을 향해 기울어진 벤치 위에서 하는 벤치 프레스 (머리가 땅쪽)");
+                    chest2_text.setText("땅을 향해 기울어진 벤치 위에서 하는 벤치 프레스 (머리가 땅쪽)\n자극부위 : 대흉근 하부");
                     Temp = chest2_rb3.getText().toString();
                 }
             }

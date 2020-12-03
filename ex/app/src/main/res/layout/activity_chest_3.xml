@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background"
     tools:context=".chest_3">
 
     <TextView
@@ -24,12 +25,12 @@
 
     <TextView
         android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:layout_marginTop="30dp"
         android:layout_gravity="center"
         android:background="@drawable/infomation"
         android:textSize="15dp"
-        android:text="평행봉을 이용한 가슴운동"
+        android:text="평행봉을 이용한 가슴운동\n자극부위 : 가슴 하부, 삼두근, 전면 삼각근"
         />
 
     <TableLayout

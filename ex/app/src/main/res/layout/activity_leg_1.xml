@@ -7,26 +7,79 @@
     android:orientation="vertical"
     tools:context=".leg_1">
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="다리운동1"/>
+        android:layout_gravity="center"
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="다리운동1 운동 방법"/>
-    <EditText
-        android:id="@+id/leg1_set"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="세트 수를 입력하세요"/>
+        android:textSize="50dp"
+        android:text="스쿼트"/>
 
-    <Button
-        android:id="@+id/leg1_choose"
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@android:drawable/ic_menu_camera"
+        />
+
+    <RadioGroup
+        android:id="@+id/leg1_rg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="담기"/>
+        android:layout_gravity="center"
+        >
+
+        <RadioButton
+            android:id="@+id/leg1_rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="풀"
+            />
+
+        <RadioButton
+            android:id="@+id/leg1_rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="스모" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/leg1_text"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/infomation"
+        android:textSize="15dp"
+        android:text="평행상태보다 좀더 굽히는 스쿼트\n자극부위 : 엉덩이(대둔근), 허벅지앞,뒤(대퇴사두,이두)"
+        />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        >
+        <TableRow>
+
+            <EditText
+                android:id="@+id/leg1_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="세트 수를 입력하세요"/>
+
+            <Button
+                android:id="@+id/leg1_choose"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="담기"/>
+
+        </TableRow>
+
+    </TableLayout>
 
 
 </LinearLayout>

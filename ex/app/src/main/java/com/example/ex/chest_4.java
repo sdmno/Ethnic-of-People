@@ -44,15 +44,15 @@ public class chest_4 extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (checkedId == R.id.chest4_rb1){
-                    chest4_text.setText("덤벨을 이용한 대흉근 고립 운동");
+                    chest4_text.setText("덤벨을 이용한 대흉근 고립 운동\n자극부위 : 가슴분리(대흉근, 삼각근)");
                     Temp = chest4_rb1.getText().toString();
                 }
                 else if (checkedId == R.id.chest4_rb2){
-                    chest4_text.setText("비스듬히 세워진 벤치에서 하는 덤벨 플라이 (머리가 위쪽)");
+                    chest4_text.setText("비스듬히 세워진 벤치에서 하는 덤벨 플라이 (머리가 위쪽)\n자극부위 : 가슴윗부분 분리(대흉근, 상완삼두근, 삼각근)");
                     Temp = chest4_rb2.getText().toString();
                 }
                 else if (checkedId == R.id.chest4_rb3) {
-                    chest4_text.setText("땅을 향해 기울어진 벤치 위에서 하는 덤벨 플라이 (머리가 땅쪽)");
+                    chest4_text.setText("땅을 향해 기울어진 벤치 위에서 하는 덤벨 플라이 (머리가 땅쪽)\n자극부위 : 가슴하부 분리(대흉근, 삼각근)");
                     Temp = chest4_rb3.getText().toString();
                 }
             }

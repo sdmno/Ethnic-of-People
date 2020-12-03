@@ -14,6 +14,7 @@ public class back_area extends AppCompatActivity {
     private Button back_button3;
     private Button back_button4;
     private Button back_basket_button;
+    private Button back_goback_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,5 +65,13 @@ public class back_area extends AppCompatActivity {
             }
         });
 
+        back_goback_button = findViewById(R.id.back_goback_button);
+        back_goback_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(back_area.this, choose_area.class);
+                startActivity(intent);
+            }
+        });
     }
 }

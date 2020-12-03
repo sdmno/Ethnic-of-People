@@ -14,7 +14,7 @@ public class stomach_area extends AppCompatActivity {
     private Button stomach_button3;
     private Button stomach_button4;
     private Button stomach_basket_button;
-
+    private Button stomach_goback_button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +60,15 @@ public class stomach_area extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(stomach_area.this, basket.class);
+                startActivity(intent);
+            }
+        });
+
+        stomach_goback_button = findViewById(R.id.stomach_goback_button);
+        stomach_goback_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(stomach_area.this, choose_area.class);
                 startActivity(intent);
             }
         });

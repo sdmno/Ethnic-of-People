@@ -14,6 +14,7 @@ public class chest_area extends AppCompatActivity {
     private Button chest_button3;
     private Button chest_button4;
     private Button chest_basket_button;
+    private Button chest_goback_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +64,15 @@ public class chest_area extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(chest_area.this, basket.class);
+                startActivity(intent);
+            }
+        });
+
+        chest_goback_button = findViewById(R.id.chest_goback_button);
+        chest_goback_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(chest_area.this, choose_area.class);
                 startActivity(intent);
             }
         });
