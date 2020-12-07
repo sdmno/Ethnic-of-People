@@ -50,6 +50,8 @@ public class basket extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 rview.setAdapter(adapter);
+                Intent intent = new Intent(basket.this, caution.class);
+                startActivity(intent);
             }
         });
     }

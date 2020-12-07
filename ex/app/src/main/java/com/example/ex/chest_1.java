@@ -71,7 +71,7 @@ public class chest_1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 num = Integer.parseInt(chest1_set.getText().toString());
-                Temp = Temp + " 푸쉬 업";
+                Temp = Temp + " 푸쉬업";
                 basket.getAdapter().addItem(new exercise_list(Temp, num));
                 Intent intent = new Intent(chest_1.this, chest_area.class);
                 startActivity(intent);

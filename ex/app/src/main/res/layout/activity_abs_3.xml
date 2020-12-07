@@ -7,25 +7,56 @@
     android:orientation="vertical"
     tools:context=".abs_3">
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="복근운동3"/>
+        android:layout_gravity="center"
 
-    <Button
+        android:textSize="50dp"
+        android:text="업도미널"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:src="@android:drawable/ic_menu_camera"
+        />
+
+    <TextView
+        android:id="@+id/abs3_text"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/infomation"
+        android:textSize="15dp"
+        android:text="업도미널 머신을 사용한 운동\n자극부위 : 복횡근, 복직극 , 내-외복사근"
+        />
+
+    <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="복근운동3 운동 방법"/>
-    <EditText
-        android:id="@+id/abs3_set"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="세트 수를 입력하세요"/>
-    <Button
-        android:id="@+id/abs3_choose"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="담기"/>
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        >
+        <TableRow>
+
+            <EditText
+                android:id="@+id/abs3_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="세트 수를 입력하세요"/>
+
+            <Button
+                android:id="@+id/abs3_choose"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="담기"/>
+
+        </TableRow>
+
+    </TableLayout>
 
 
 </LinearLayout>

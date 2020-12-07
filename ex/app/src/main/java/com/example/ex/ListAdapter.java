@@ -20,6 +20,12 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ItemViewHolder
     public ListAdapter(){
     }
 
+    public exercise_list pop_items()
+    {
+        exercise_list temp = items.get(0);
+        items.remove(0);
+        return temp;
+    }
     @NonNull
     @Override
     public ItemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

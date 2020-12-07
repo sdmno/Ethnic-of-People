@@ -13,7 +13,7 @@
         android:layout_marginStart="68dp"
         android:layout_marginLeft="68dp"
         android:layout_marginTop="41dp"
-        android:text="복근1"
+        android:text="레그 레이즈"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/stomach_button3" />
 
@@ -24,7 +24,7 @@
         android:layout_marginStart="68dp"
         android:layout_marginLeft="68dp"
         android:layout_marginTop="42dp"
-        android:text="복근3"
+        android:text="업도미널"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/stomach_textView3" />
 
@@ -46,7 +46,7 @@
         android:layout_marginTop="42dp"
         android:layout_marginEnd="71dp"
         android:layout_marginRight="71dp"
-        android:text="복근2"
+        android:text="크런치"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/stomach_textView3" />
 

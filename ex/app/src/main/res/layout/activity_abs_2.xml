@@ -7,25 +7,91 @@
     android:orientation="vertical"
     tools:context=".abs_2">
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="복근운동2"/>
+        android:layout_gravity="center"
 
-    <Button
+        android:textSize="50dp"
+        android:text="크런치"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:src="@android:drawable/ic_menu_camera"
+        />
+
+    <RadioGroup
+        android:id="@+id/abs2_rg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="복근운동2 운동 방법"/>
-    <EditText
-        android:id="@+id/abs2_set"
+        android:layout_gravity="center"
+        >
+
+        <RadioButton
+            android:id="@+id/abs2_rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="베이직"
+            />
+
+        <RadioButton
+            android:id="@+id/abs2_rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="머신" />
+
+        <RadioButton
+            android:id="@+id/abs2_rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="바이시클" />
+
+        <RadioButton
+            android:id="@+id/abs2_rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="리버스" />
+
+   </RadioGroup>
+
+    <TextView
+        android:id="@+id/abs2_text"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/infomation"
+        android:textSize="15dp"
+        android:text="일반적인 크런치\n자극부위 : 복직근, 상복부"
+        />
+
+    <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="세트 수를 입력하세요"/>
-    <Button
-        android:id="@+id/abs2_choose"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="담기"/>
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        >
+        <TableRow>
+
+            <EditText
+                android:id="@+id/abs2_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="세트 수를 입력하세요"/>
+
+            <Button
+                android:id="@+id/abs2_choose"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="담기"/>
+
+        </TableRow>
+
+    </TableLayout>
 
 
 </LinearLayout>
