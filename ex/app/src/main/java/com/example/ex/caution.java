@@ -14,8 +14,14 @@ public class caution extends AppCompatActivity {
     TextView caution_name;
     TextView caution_caution;
     ImageView caution_image;
-    exercise_list temp;
+    static exercise_list temp;
     Button caution_button;
+
+    public static exercise_list get_exercise_list()
+    {
+        return temp;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,8 +35,6 @@ public class caution extends AppCompatActivity {
         caution_caution.setMovementMethod(new ScrollingMovementMethod());
 
         caution_name.setText(temp.get_name());
-
-
 
         if (temp.get_name().equals("플랫 푸쉬업")) {
             //caution_image.setImageResource();
@@ -154,7 +158,7 @@ public class caution extends AppCompatActivity {
         caution_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(caution.this, Act_Timer.class);
+                Intent intent = new Intent(caution.this, act_timer.class);
                 startActivity(intent);
             }
         });

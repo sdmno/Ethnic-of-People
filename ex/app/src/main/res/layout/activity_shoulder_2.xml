@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".abs_4">
+    android:background="@drawable/background"
+    tools:context=".shoulder_2">
 
     <TextView
         android:layout_width="wrap_content"
@@ -13,7 +14,7 @@
         android:layout_gravity="center"
 
         android:textSize="50dp"
-        android:text="플랭크"/>
+        android:text="프레스"/>
 
     <ImageView
         android:layout_width="200dp"
@@ -23,43 +24,39 @@
         />
 
     <RadioGroup
-        android:id="@+id/abs4_rg"
+        android:id="@+id/shoulder2_rg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         >
 
         <RadioButton
-            android:id="@+id/abs4_rb1"
+            android:id="@+id/shoulder2_rb1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="엘보우"
+            android:text="밀리터리"
             />
 
         <RadioButton
-            android:id="@+id/abs4_rb2"
+            android:id="@+id/shoulder2_rb2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="사이드" />
+            android:text="덤벨" />
 
-        <RadioButton
-            android:id="@+id/abs4_rb3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="풀" />
+
 
     </RadioGroup>
 
     <TextView
-        android:id="@+id/abs4_text"
+        android:id="@+id/shoulder2_text"
         android:layout_width="300dp"
         android:layout_height="70dp"
         android:layout_marginTop="30dp"
         android:layout_gravity="center"
         android:background="@drawable/infomation"
         android:textSize="15dp"
-        android:text="자세를 널빤지처럼 평평하게 엎드린 상태로 실행하는 운동\n자극부위 : 복근, 전신코어"
+        android:text="바벨을 반동을 이용하지 않고 팔과 어깨 힘만으로 들어올리는 프레스\n자극부위 : 전면 삼각근"
         />
 
     <TableLayout
@@ -71,13 +68,13 @@
         <TableRow>
 
             <EditText
-                android:id="@+id/abs4_set"
+                android:id="@+id/shoulder2_set"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="세트 수를 입력하세요"/>
 
             <Button
-                android:id="@+id/abs4_choose"
+                android:id="@+id/shoulder2_choose"
                 android:layout_marginLeft="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

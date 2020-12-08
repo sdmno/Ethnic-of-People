@@ -13,7 +13,7 @@
         android:layout_marginStart="68dp"
         android:layout_marginLeft="68dp"
         android:layout_marginTop="41dp"
-        android:text="어깨1"
+        android:text="레이즈"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/shoulder_button3" />
 
@@ -46,7 +46,7 @@
         android:layout_marginTop="42dp"
         android:layout_marginEnd="71dp"
         android:layout_marginRight="71dp"
-        android:text="어깨2"
+        android:text="프레스"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/shoulder_textView3" />
 
@@ -71,40 +71,28 @@
         android:id="@+id/shoulder_basket_button"
         android:layout_width="150dp"
         android:layout_height="100dp"
-        android:layout_marginTop="67dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="46dp"
         android:layout_marginRight="46dp"
-        android:layout_marginBottom="164dp"
+        android:layout_marginBottom="131dp"
         android:text="장바구니"
         app:backgroundTint="#8BC34A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/shoulder_button4" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginLeft="68dp"
-        android:layout_marginTop="67dp"
-        android:layout_marginBottom="164dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/shoulder_button1"
-        app:srcCompat="@drawable/backpick" />
-
     <Button
         android:id="@+id/shoulder_goback_button"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginEnd="68dp"
-        android:layout_marginRight="68dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="131dp"
         android:text="뒤로가기"
         app:backgroundTint="#555555"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/shoulder_button4"
-        app:layout_constraintVertical_bias="0.87" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shoulder_button1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

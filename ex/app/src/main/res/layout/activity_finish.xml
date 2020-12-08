@@ -4,45 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".caution">
+    tools:context=".finish"
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/caution_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="50dp"
         android:layout_gravity="center"
-        android:textSize="40dp"
-        android:text=""/>
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="수고하셨습니다!"
+        />
 
     <ImageView
-        android:id="@+id/caution_image"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:layout_gravity="center"
-        android:src="@android:drawable/ic_menu_camera" />
+        android:layout_marginTop="30dp"
+        android:src="@android:drawable/ic_menu_camera"
+        />
 
     <TextView
-        android:id="@+id/caution_caution"
+        android:id="@+id/finish"
         android:layout_width= "350dp"
-        android:layout_height= "150dp"
+        android:layout_height= "100dp"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:textSize="15dp"
+        android:textSize="30dp"
         android:background="@drawable/infomation"
         android:scrollbarFadeDuration="0"
         android:scrollbarSize="5dp"
         android:scrollbarThumbVertical="@android:color/darker_gray"
         android:scrollbars="vertical"
-        android:text=""/>
+        android:text="운동명언"/>
 
     <Button
-        android:id="@+id/caution_button"
+        android:id="@+id/finish_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="운동 시작"
+        android:text="처음으로"
         />
 
 </LinearLayout>

@@ -12,9 +12,9 @@ public class choose_area extends AppCompatActivity {
     private Button lower_body;
     private Button stomach;
     private Button shoulder;
-    private Button Whole_body;
     private Button back;
 
+    private Button choose_area_basket_button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,12 +55,12 @@ public class choose_area extends AppCompatActivity {
                 startActivity(shoulder_screen);
             }
         });
-        Whole_body=findViewById(R.id.Whole_body);
-        Whole_body.setOnClickListener(new View.OnClickListener() {
+        choose_area_basket_button=findViewById(R.id.choose_area_basket_button);
+        choose_area_basket_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Whole_body_screen=new Intent(choose_area.this,Whole_body_area.class);
-                startActivity(Whole_body_screen);
+                Intent basket_screen = new Intent(choose_area.this, basket.class);
+                startActivity(basket_screen);
             }
         });
         back=findViewById(R.id.back);

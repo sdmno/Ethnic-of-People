@@ -2,6 +2,7 @@ package com.example.ex;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -11,7 +12,7 @@ import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-public class Act_Timer extends AppCompatActivity {
+public class act_timer extends AppCompatActivity {
 
     SeekBar timeBar;
     TextView timerText;
@@ -19,11 +20,12 @@ public class Act_Timer extends AppCompatActivity {
     Boolean active = false;
     Button startButton;
     CountDownTimer countDownTimer;
-    int i=1;
+    int i = 1;
+    exercise_list temp;
 
     public void resetTimer(){
-        timerText.setText("0:30");
-        timeBar.setProgress(30);
+        timerText.setText("1:00");
+        timeBar.setProgress(60);
         countDownTimer.cancel();
         startButton.setText("시작");
         timeBar.setEnabled(true);
@@ -49,6 +51,7 @@ public class Act_Timer extends AppCompatActivity {
 
     public void startClock(View view){
 
+        temp = caution.get_exercise_list();
 
         if (active==false) {
             active = true;
@@ -64,19 +67,33 @@ public class Act_Timer extends AppCompatActivity {
 
                 @Override
                 public void onFinish() {
-                    i++;
-                    resetTimer();
-                    if(i%2==0)
+                    if(temp.get_set() >= i/2 + 1) {
+                        i++;
+                        resetTimer();
+                        if (i % 2 == 0) {
+                            set.setText(i / 2 + " REST");
+                        }
+                        else {
+                            set.setText((i + 1) / 2 + " SET");
+                        }
+                        MediaPlayer play = MediaPlayer.create(getApplicationContext(), R.raw.alarm);
+                        play.start();
+                    }
+                    else
                     {
-                        set.setText(i/2+" REST");
+                        i = 1;
+                        if(basket.getAdapter().items.isEmpty()) {
+
+                        }
+                        else
+                        {
+                            Intent intent = new Intent(act_timer.this, caution.class);
+                            startActivity(intent);
+                        }
                     }
-                    else {
-                        set.setText((i+1)/2 + " SET");
-                    }
-                    MediaPlayer play = MediaPlayer.create(getApplicationContext(), R.raw.alarm);
-                    play.start();
                 }
             }.start();
+
         }
         else {
             resetTimer();
@@ -86,15 +103,15 @@ public class Act_Timer extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_timer);
+        setContentView(R.layout.activity_act_timer);
 
         timeBar = (SeekBar)findViewById(R.id.timeBar);
         timerText = (TextView) findViewById(R.id.timerText);
         set = (TextView) findViewById(R.id.set);
         startButton = (Button) findViewById(R.id.startButton);
 
-        timeBar.setMax(600);
-        timeBar.setProgress(30);
+        timeBar.setMax(120);
+        timeBar.setProgress(60);
 
         timeBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override

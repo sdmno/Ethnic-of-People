@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Ex">
-        <activity android:name=".caution"></activity>
+        <activity android:name=".finish"></activity>
+        <activity android:name=".caution" />
+        <activity android:name=".act_timer" />
         <activity android:name=".Whole_body_area" />
         <activity android:name=".back_area" />
         <activity android:name=".shoulder_area" />
@@ -34,6 +36,8 @@
         <activity android:name=".back_2" />
         <activity android:name=".back_3" />
         <activity android:name=".back_4" />
+        <activity android:name=".shoulder_1" />
+        <activity android:name=".shoulder_2" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
