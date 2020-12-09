@@ -11,6 +11,7 @@
         android:id="@+id/caution_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:layout_gravity="center"
         android:textSize="40dp"
         android:text=""/>
@@ -18,7 +19,7 @@
     <ImageView
         android:id="@+id/caution_image"
         android:layout_width="200dp"
-        android:layout_height="150dp"
+        android:layout_height="200dp"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:src="@android:drawable/ic_menu_camera" />
@@ -26,7 +27,7 @@
     <TextView
         android:id="@+id/caution_caution"
         android:layout_width= "350dp"
-        android:layout_height= "150dp"
+        android:layout_height= "200dp"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:textSize="15dp"
@@ -42,6 +43,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:textColor="#0B0A0A"
+        app:backgroundTint="#A0DDA3"
         android:text="운동 시작"
         />
 

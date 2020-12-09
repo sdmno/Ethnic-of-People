@@ -12,15 +12,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-
+        android:textColor="#0B0A0A"
         android:textSize="50dp"
         android:text="덤벨 플라이"/>
 
     <ImageView
+        android:id="@+id/chest4_image"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
-        android:src="@android:drawable/ic_menu_camera"
+        app:srcCompat="@drawable/dumbbell_fly"
         />
 
     <RadioGroup
@@ -44,11 +45,6 @@
             android:layout_height="wrap_content"
             android:text="인클라인" />
 
-        <RadioButton
-            android:id="@+id/chest4_rb3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="디클라인" />
 
     </RadioGroup>
 
@@ -60,6 +56,7 @@
         android:layout_gravity="center"
         android:background="@drawable/infomation"
         android:textSize="15dp"
+        android:textColor="#0B0A0A"
         android:text="평평한 벤치에 누워서 하는 벤치 프레스\n자극부위 : 가슴분리(대흉근, 삼각근)"
         />
 
@@ -82,6 +79,8 @@
                 android:layout_marginLeft="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="#0B0A0A"
+                app:backgroundTint="#A0DDA3"
                 android:text="담기"/>
 
         </TableRow>

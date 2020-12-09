@@ -11,15 +11,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-
+        android:textColor="#0B0A0A"
         android:textSize="50dp"
         android:text="플랭크"/>
 
     <ImageView
+        android:id="@+id/abs4_image"
         android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_height="180dp"
         android:layout_gravity="center"
-        android:src="@android:drawable/ic_menu_camera"
+        app:srcCompat="@drawable/plank"
         />
 
     <RadioGroup
@@ -59,6 +60,8 @@
         android:layout_gravity="center"
         android:background="@drawable/infomation"
         android:textSize="15dp"
+        android:textColor="#0B0A0A"
+
         android:text="자세를 널빤지처럼 평평하게 엎드린 상태로 실행하는 운동\n자극부위 : 복근, 전신코어"
         />
 
@@ -81,6 +84,8 @@
                 android:layout_marginLeft="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="#0B0A0A"
+                app:backgroundTint="#A0DDA3"
                 android:text="담기"/>
 
         </TableRow>

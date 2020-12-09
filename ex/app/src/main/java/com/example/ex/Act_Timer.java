@@ -83,7 +83,8 @@ public class act_timer extends AppCompatActivity {
                     {
                         i = 1;
                         if(basket.getAdapter().items.isEmpty()) {
-
+                            Intent intent = new Intent(act_timer.this, finish.class);
+                            startActivity(intent);
                         }
                         else
                         {

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -20,10 +21,10 @@ public class back_1 extends AppCompatActivity {
     private String Temp = "바벨";
     private int num;
     TextView back1_text;
+    ImageView back1_image;
     RadioGroup back1_rg ;
     RadioButton back1_rb1;
     RadioButton back1_rb2;
-
 
 
     @Override
@@ -40,16 +41,19 @@ public class back_1 extends AppCompatActivity {
         back1_rb1 = findViewById(R.id.back1_rb1);
         back1_rb2 = findViewById(R.id.back1_rb2);
 
+        back1_image = findViewById(R.id.back1_image);
 
         back1_rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (checkedId == R.id.back1_rb1){
                     back1_text.setText("바벨을 이용하는 운동방법\n자극부위(광배근, 승모근 중부, 능형근)");
+                    back1_image.setImageResource(R.drawable.barbell_row);
                     Temp = back1_rb1.getText().toString();
                 }
                 else if (checkedId == R.id.back1_rb2){
                     back1_text.setText("덤벨을 이용하는 운동방법\n자극부위(광배근, 승모근 중부, 능형근)");
+                    back1_image.setImageResource(R.drawable.dumbbell_row);
                     Temp = back1_rb2.getText().toString();
                 }
 

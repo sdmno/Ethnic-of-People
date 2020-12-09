@@ -16,10 +16,11 @@
         android:text="스쿼트"/>
 
     <ImageView
+        android:id="@+id/leg1_image"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
-        android:src="@android:drawable/ic_menu_camera"
+        app:srcCompat="@drawable/full_squat"
         />
 
     <RadioGroup

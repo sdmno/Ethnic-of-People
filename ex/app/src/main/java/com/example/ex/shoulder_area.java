@@ -22,7 +22,7 @@ public class shoulder_area extends AppCompatActivity {
         shoulder_button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(shoulder_area.this, abs_1.class);
+                Intent intent = new Intent(shoulder_area.this, shoulder_1.class);
                 startActivity(intent);
             }
         });
@@ -31,7 +31,7 @@ public class shoulder_area extends AppCompatActivity {
         shoulder_button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(shoulder_area.this, abs_2.class);
+                Intent intent = new Intent(shoulder_area.this, shoulder_2.class);
                 startActivity(intent);
             }
         });

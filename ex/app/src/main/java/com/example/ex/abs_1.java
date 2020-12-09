@@ -3,10 +3,12 @@ package com.example.ex;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -21,7 +23,7 @@ public class abs_1 extends AppCompatActivity {
     RadioGroup abs1_rg ;
     RadioButton abs1_rb1;
     RadioButton abs1_rb2;
-
+    ImageView abs1_image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,15 +39,19 @@ public class abs_1 extends AppCompatActivity {
         abs1_rb1 = findViewById(R.id.abs1_rb1);
         abs1_rb2 = findViewById(R.id.abs1_rb2);
 
+        abs1_image = findViewById(R.id.abs1_image);
+
         abs1_rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (checkedId == R.id.abs1_rb1){
-                    abs1_text.setText("일반적인 레그 레이즈\\n자극부위 : 하복부 및 복부 전체");
+                    abs1_text.setText("일반적인 레그 레이즈\n자극부위 : 하복부 및 복부 전체");
+                    abs1_image.setImageResource(R.drawable.leg_raise);
                     Temp = abs1_rb1.getText().toString();
                 }
                 else if (checkedId == R.id.abs1_rb2){
                     abs1_text.setText("철봉이나 평행봉에 매달린 형태로 진행하는 레그 레이즈\n자극부위 : 하복부 및 복부 전체");
+                    abs1_image.setImageResource(R.drawable.hanging_leg_raise);
                     Temp = abs1_rb2.getText().toString();
                 }
             }

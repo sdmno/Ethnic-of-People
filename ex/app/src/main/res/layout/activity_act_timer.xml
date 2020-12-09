@@ -43,6 +43,7 @@
         android:layout_alignBottom="@+id/clockImage"
         android:layout_centerHorizontal="true"
         android:text="1 SET"
+        android:textColor="#0B0A0A"
         android:textSize="70sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/clockImage"
         android:layout_centerHorizontal="true"
-        android:text="0:30"
+        android:text="1:00"
         android:textSize="70sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -73,6 +74,8 @@
         android:layout_marginBottom="56dp"
         android:onClick="startClock"
         android:text="시작"
+        android:textColor="#0B0A0A"
+        app:backgroundTint="#A0DDA3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -85,6 +88,8 @@
         android:layout_marginRight="160dp"
         android:layout_marginBottom="56dp"
         android:text="나가기"
+        android:textColor="#0B0A0A"
+        app:backgroundTint="#A0DDA3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

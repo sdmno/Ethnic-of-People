@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -24,6 +25,7 @@ public class leg_1 extends AppCompatActivity {
     RadioButton leg1_rb3;
     RadioButton leg1_rb4;
 
+    ImageView leg1_image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,15 +41,19 @@ public class leg_1 extends AppCompatActivity {
         leg1_rb1 = findViewById(R.id.leg1_rb1);
         leg1_rb2 = findViewById(R.id.leg1_rb2);
 
+        leg1_image = findViewById(R.id.leg1_image);
+
         leg1_rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (checkedId == R.id.leg1_rb1){
                     leg1_text.setText("평행상태보다 좀더 굽히는 스쿼트\n자극부위 : 엉덩이(대둔근), 허벅지앞,뒤(대퇴사두,이두)");
+                    leg1_image.setImageResource(R.drawable.full_squat);
                     Temp = leg1_rb1.getText().toString();
                 }
                 else if (checkedId == R.id.leg1_rb2){
                     leg1_text.setText("다리를 넓게 벌리고 허리를 낮게 하여 진행하는 스쿼트\n자극부위 : 엉덩이(대둔근), *허벅지 안쪽");
+                    leg1_image.setImageResource(R.drawable.sumo_squat);
                     Temp = leg1_rb2.getText().toString();
                 }
             }

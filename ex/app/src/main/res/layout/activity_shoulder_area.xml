@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".shoulder_area">
 
     <Button
@@ -12,10 +13,12 @@
         android:layout_height="100dp"
         android:layout_marginStart="68dp"
         android:layout_marginLeft="68dp"
-        android:layout_marginTop="41dp"
+        android:layout_marginBottom="50dp"
         android:text="레이즈"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/shoulder_button3" />
+        android:textColor="#0B0A0A"
+        app:backgroundTint="#A0DDA3"
+        app:layout_constraintBottom_toTopOf="@+id/shoulder_goback_button"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/shoulder_button3"
@@ -23,32 +26,38 @@
         android:layout_height="100dp"
         android:layout_marginStart="68dp"
         android:layout_marginLeft="68dp"
-        android:layout_marginTop="42dp"
+        android:layout_marginBottom="50dp"
         android:text="어깨3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/shoulder_textView3" />
+        android:textColor="#0B0A0A"
+        app:backgroundTint="#A0DDA3"
+        app:layout_constraintBottom_toTopOf="@+id/shoulder_button1"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/shoulder_button4"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="41dp"
         android:layout_marginEnd="71dp"
         android:layout_marginRight="71dp"
+        android:layout_marginBottom="50dp"
         android:text="어깨4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/shoulder_button2" />
+        android:textColor="#0B0A0A"
+        app:backgroundTint="#A0DDA3"
+        app:layout_constraintBottom_toTopOf="@+id/shoulder_basket_button"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/shoulder_button2"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="42dp"
         android:layout_marginEnd="71dp"
         android:layout_marginRight="71dp"
-        android:text="프레스"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/shoulder_textView3" />
+        android:layout_marginBottom="50dp"
+        android:text="숄더 프레스"
+        android:textColor="#0B0A0A"
+        app:backgroundTint="#A0DDA3"
+        app:layout_constraintBottom_toTopOf="@+id/shoulder_button4"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/shoulder_textView3"
@@ -56,13 +65,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="134dp"
         android:layout_marginLeft="134dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="135dp"
         android:layout_marginRight="135dp"
-        android:layout_marginBottom="42dp"
-        android:text="운동 종류"
+        android:text="어깨 운동"
         android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/shoulder_button3"
+        android:textColor="#0B0A0A"
+        app:backgroundTint="#A0DDA3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -71,15 +80,14 @@
         android:id="@+id/shoulder_basket_button"
         android:layout_width="150dp"
         android:layout_height="100dp"
-        android:layout_marginTop="100dp"
         android:layout_marginEnd="46dp"
         android:layout_marginRight="46dp"
-        android:layout_marginBottom="131dp"
+        android:layout_marginBottom="50dp"
         android:text="장바구니"
-        app:backgroundTint="#8BC34A"
+        android:textColor="#0B0A0A"
+        app:backgroundTint="#A0DDA3"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/shoulder_button4" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/shoulder_goback_button"
@@ -87,12 +95,24 @@
         android:layout_height="100dp"
         android:layout_marginStart="72dp"
         android:layout_marginLeft="72dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="131dp"
+        android:layout_marginBottom="50dp"
         android:text="뒤로가기"
         app:backgroundTint="#555555"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="138dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginRight="137dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/shoulder_button1" />
+        app:layout_constraintTop_toBottomOf="@+id/shoulder_textView3"
+        app:srcCompat="@drawable/cbnu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

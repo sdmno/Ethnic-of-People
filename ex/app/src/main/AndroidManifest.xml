@@ -12,7 +12,6 @@
         <activity android:name=".finish"></activity>
         <activity android:name=".caution" />
         <activity android:name=".act_timer" />
-        <activity android:name=".Whole_body_area" />
         <activity android:name=".back_area" />
         <activity android:name=".shoulder_area" />
         <activity android:name=".stomach_area" />

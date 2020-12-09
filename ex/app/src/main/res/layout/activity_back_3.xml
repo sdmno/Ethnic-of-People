@@ -12,15 +12,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-
+        android:textColor="#0B0A0A"
         android:textSize="50dp"
         android:text="풀업"/>
 
     <ImageView
+        android:id="@+id/back3_image"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
-        android:src="@android:drawable/ic_menu_camera"
+        app:srcCompat="@drawable/pull_up"
         />
 
     <TextView
@@ -30,6 +31,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:background="@drawable/infomation"
+        android:textColor="#0B0A0A"
         android:text="턱걸이\n자극 부위(광배근,대원근,승모근,능형근)"
         android:textSize="15dp" />
 
@@ -51,6 +53,8 @@
                 android:id="@+id/back3_choose"
                 android:layout_marginLeft="20dp"
                 android:layout_width="wrap_content"
+                android:textColor="#0B0A0A"
+                app:backgroundTint="#A0DDA3"
                 android:layout_height="wrap_content"
                 android:text="담기"/>
 

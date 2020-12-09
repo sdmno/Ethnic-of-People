@@ -12,15 +12,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-
         android:textSize="50dp"
+        android:textColor="#0B0A0A"
         android:text="벤치 프레스"/>
 
     <ImageView
+        android:id="@+id/chest2_image"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
-        android:src="@android:drawable/ic_menu_camera"
+        app:srcCompat="@drawable/bench_press"
         />
 
     <RadioGroup
@@ -60,6 +61,7 @@
         android:layout_gravity="center"
         android:background="@drawable/infomation"
         android:textSize="15dp"
+        android:textColor="#0B0A0A"
         android:text="평평한 벤치에 누워서 하는 벤치 프레스\n자극부위 : 대흉근, 상완삼두근, 삼각근"
         />
 
@@ -80,6 +82,8 @@
             <Button
                 android:id="@+id/chest2_choose"
                 android:layout_marginLeft="20dp"
+                app:backgroundTint="#A0DDA3"
+                android:textColor="#0B0A0A"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="담기"/>

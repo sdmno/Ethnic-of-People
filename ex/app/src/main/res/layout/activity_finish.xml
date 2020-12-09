@@ -15,11 +15,12 @@
         android:gravity="center"
         android:layout_marginTop="30dp"
         android:text="수고하셨습니다!"
+        android:textColor="#0B0A0A"
         />
 
     <ImageView
         android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_height="200dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:src="@android:drawable/ic_menu_camera"
@@ -28,22 +29,24 @@
     <TextView
         android:id="@+id/finish"
         android:layout_width= "350dp"
-        android:layout_height= "100dp"
+        android:layout_height= "200dp"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:background="@drawable/infomation"
         android:scrollbarFadeDuration="0"
         android:scrollbarSize="5dp"
         android:scrollbarThumbVertical="@android:color/darker_gray"
         android:scrollbars="vertical"
-        android:text="운동명언"/>
+        android:text=""/>
 
     <Button
         android:id="@+id/finish_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:textColor="#0B0A0A"
+        app:backgroundTint="#A0DDA3"
         android:text="처음으로"
         />
 

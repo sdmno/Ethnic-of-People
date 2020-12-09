@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -22,6 +23,7 @@ public class chest_2 extends AppCompatActivity {
     RadioButton chest2_rb1;
     RadioButton chest2_rb2;
     RadioButton chest2_rb3;
+    ImageView chest2_image;
 
 
     @Override
@@ -39,20 +41,24 @@ public class chest_2 extends AppCompatActivity {
         chest2_rb1 = findViewById(R.id.chest2_rb1);
         chest2_rb2 = findViewById(R.id.chest2_rb2);
         chest2_rb3 = findViewById(R.id.chest2_rb3);
+        chest2_image = findViewById(R.id.chest2_image);
 
         chest2_rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (checkedId == R.id.chest2_rb1){
                     chest2_text.setText("평평한 벤치에 누워서 하는 벤치 프레스\n자극부위 : 대흉근, 상완삼두근, 삼각근");
+                    chest2_image.setImageResource(R.drawable.bench_press);
                     Temp = chest2_rb1.getText().toString();
                 }
                 else if (checkedId == R.id.chest2_rb2){
                     chest2_text.setText("비스듬히 세워진 벤치에서 하는 벤치 프레스 (머리가 위쪽)\n자극부위 : 대흉근 상부, 상완삼두근, 삼각근");
+                    chest2_image.setImageResource(R.drawable.incline_bench_press);
                     Temp = chest2_rb2.getText().toString();
                 }
                 else if (checkedId == R.id.chest2_rb3) {
                     chest2_text.setText("땅을 향해 기울어진 벤치 위에서 하는 벤치 프레스 (머리가 땅쪽)\n자극부위 : 대흉근 하부");
+                    chest2_image.setImageResource(R.drawable.decline_bench_press);
                     Temp = chest2_rb3.getText().toString();
                 }
             }
