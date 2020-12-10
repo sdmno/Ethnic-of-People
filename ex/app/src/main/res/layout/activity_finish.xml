@@ -19,6 +19,7 @@
         />
 
     <ImageView
+        android:id="@+id/finish_image"
         android:layout_width="300dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
@@ -33,6 +34,7 @@
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:textSize="20dp"
+        android:textColor="@color/black"
         android:background="@drawable/infomation"
         android:scrollbarFadeDuration="0"
         android:scrollbarSize="5dp"

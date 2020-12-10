@@ -11,9 +11,9 @@
         android:id="@+id/lower_body_button1"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginLeft="68dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginBottom="200dp"
         android:text="스쿼트"
         android:textColor="#0B0A0A"
         app:backgroundTint="#A0DDA3"
@@ -21,42 +21,16 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/lower_body_button3"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginLeft="68dp"
-        android:layout_marginBottom="50dp"
-        android:text="하체3"
-        android:textColor="#0B0A0A"
-        app:backgroundTint="#A0DDA3"
-        app:layout_constraintBottom_toTopOf="@+id/lower_body_button1"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/lower_body_button4"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="71dp"
-        android:layout_marginRight="71dp"
-        android:layout_marginBottom="50dp"
-        android:text="하체4"
-        android:textColor="#0B0A0A"
-        app:backgroundTint="#A0DDA3"
-        app:layout_constraintBottom_toTopOf="@+id/lower_body_basket_button"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
         android:id="@+id/lower_body_button2"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginEnd="71dp"
         android:layout_marginRight="71dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="200dp"
         android:text="런지"
         android:textColor="#0B0A0A"
         app:backgroundTint="#A0DDA3"
-        app:layout_constraintBottom_toTopOf="@+id/lower_body_button4"
+        app:layout_constraintBottom_toTopOf="@+id/lower_body_basket_button"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
@@ -65,12 +39,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="134dp"
         android:layout_marginLeft="134dp"
-        android:layout_marginTop="50dp"
         android:layout_marginEnd="135dp"
         android:layout_marginRight="135dp"
         android:text="하체 운동"
-        android:textSize="36sp"
         android:textColor="#0B0A0A"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

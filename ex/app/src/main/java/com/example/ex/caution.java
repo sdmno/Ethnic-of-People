@@ -403,7 +403,7 @@ public class caution extends AppCompatActivity {
                     "주의사항 : 상체나 무릎의 반동을 이용하지 않도록 주의한다.");
             caution_image.setImageResource(R.drawable.bent_over_lateral_raise);
         }
-        else if (temp.get_name().equals("바벨 숄더프레스")) {
+        else if (temp.get_name().equals("바벨 숄더 프레스")) {
             //caution_image.setImageResource();
             caution_caution.setText("1. 서서 또는 앉은 자세에서 바벨을 어깨너비보다 좀 더 넓은 간격으로 잡아준다.\n" +
                     "2.바벨을 어깨높이만큼 들어올린다.\n" +

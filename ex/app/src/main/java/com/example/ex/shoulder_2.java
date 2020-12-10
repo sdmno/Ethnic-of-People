@@ -16,7 +16,7 @@ public class shoulder_2 extends AppCompatActivity {
 
     private Button shoulder2_choose;
     private EditText shoulder2_set;
-    private String Temp = "밀리터리";
+    private String Temp = "바벨";
     private int num;
     TextView shoulder2_text;
     RadioGroup shoulder2_rg ;

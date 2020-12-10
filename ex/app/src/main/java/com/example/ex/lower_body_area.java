@@ -38,23 +38,6 @@ public class lower_body_area extends AppCompatActivity {
             }
         });
 
-        lower_body_button3=findViewById(R.id.lower_body_button3);
-        lower_body_button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(lower_body_area.this, leg_3.class);
-                startActivity(intent);
-            }
-        });
-
-        lower_body_button4=findViewById(R.id.lower_body_button4);
-        lower_body_button4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(lower_body_area.this,leg_4.class);
-                startActivity(intent);
-            }
-        });
 
         lower_body_basket_button = findViewById(R.id.lower_body_basket_button);
         lower_body_basket_button.setOnClickListener(new View.OnClickListener() {
